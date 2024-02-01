@@ -14,7 +14,7 @@ export interface Options{
 
 export class SaveFile implements SaveFileUseCase{
 
-  constrcutor(
+  constructor(
     /**
      * repository: StorageRepository
      */
@@ -33,7 +33,7 @@ export class SaveFile implements SaveFileUseCase{
          
             return true;
         } catch (error) {
-            console.error(error);
+            // console.error(error); //winston
             return false;
         }
   }
