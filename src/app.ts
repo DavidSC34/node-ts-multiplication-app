@@ -15,6 +15,6 @@ import { ServerApp } from './presentation/server-app';
 
 async function main(){
 
-  const {b:base, l:limit,n:name,d:destination ,s:showTable} = yarg;
-  ServerApp.run({base, limit,name,destination, showTable});
+  const {b:base, l:limit,n:fileName,d:fileDestination ,s:showTable} = yarg;
+  ServerApp.run({base, limit,fileName,fileDestination, showTable});
 }
